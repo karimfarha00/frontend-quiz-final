@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web Quiz</title>
+  <link rel="stylesheet" href="../styles.css/quiz.css" />
+  <link rel="stylesheet" href="../styles.css/alert.css" />
+</head>
+<body>
+  <div id="quizContent" class="quiz-container">
+    <h1>Web Development Quiz</h1>
+
+    <div class="section" id="html-section">
+      <h2>HTML</h2>
+      <div class="question">
+        <p>1. What does HTML stand for?</p>
+        <label><input type="radio" name="q1" value="A" /> Hyper Text Markup Language</label>
+        <label><input type="radio" name="q1" value="B" /> Hyperlinks and Text Markup Language</label>
+        <label><input type="radio" name="q1" value="C" /> Home Tool Markup Language</label>
+        <label><input type="radio" name="q1" value="D" /> Hyper Tool Multi Language</label>
+      </div>
+      <div class="question">
+        <p>2. Which tag is used to create a hyperlink in HTML?</p>
+        <label><input type="radio" name="q2" value="A" /> &lt;link&gt;</label>
+        <label><input type="radio" name="q2" value="B" /> &lt;a&gt;</label>
+        <label><input type="radio" name="q2" value="C" /> &lt;href&gt;</label>
+        <label><input type="radio" name="q2" value="D" /> &lt;hyper&gt;</label>
+      </div>
+    </div>
+
+    <div class="section" id="css-section">
+      <h2>CSS</h2>
+      <div class="question">
+        <p>3. What property is used to change the background color?</p>
+        <label><input type="radio" name="q3" value="A" /> color</label>
+        <label><input type="radio" name="q3" value="B" /> bgcolor</label>
+        <label><input type="radio" name="q3" value="C" /> background-color</label>
+        <label><input type="radio" name="q3" value="D" /> style</label>
+      </div>
+      <div class="question">
+        <p>4. Which is the correct CSS syntax?</p>
+        <label><input type="radio" name="q4" value="A" /> body {color: black;}</label>
+        <label><input type="radio" name="q4" value="B" /> {body;color:black;}</label>
+        <label><input type="radio" name="q4" value="C" /> body:color=black;</label>
+        <label><input type="radio" name="q4" value="D" /> body = black;</label>
+      </div>
+    </div>
+
+    <div class="section" id="js-section">
+      <h2>JavaScript</h2>
+      <div class="question">
+        <p>5. What keyword is used to declare a variable?</p>
+        <label><input type="radio" name="q5" value="A" /> var</label>
+        <label><input type="radio" name="q5" value="B" /> let</label>
+        <label><input type="radio" name="q5" value="C" /> const</label>
+        <label><input type="radio" name="q5" value="D" /> All of the above</label>
+      </div>
+      <div class="question">
+        <p>6. What does `document.getElementById()` do?</p>
+        <label><input type="radio" name="q6" value="A" /> Gets an element by tag</label>
+        <label><input type="radio" name="q6" value="B" /> Gets an element by class</label>
+        <label><input type="radio" name="q6" value="C" /> Gets an element by ID</label>
+        <label><input type="radio" name="q6" value="D" /> Gets all elements</label>
+      </div>
+    </div>
+
+    <div class="button-row">
+    <button onclick="submitQuiz()">Submit Quiz</button>
+    <button onclick="resetQuiz()">Reset Quiz</button>
+    <button onclick="goHome()">Go to Home</button>
+    <div id="result"></div>
+  </div>
+</div>
+
+
+  <div id="customAlert" class="custom-alert-overlay" style="display: none;">
+    <div class="custom-alert-box">
+      <p id="customAlertMessage">Alert goes here</p>
+      <button id="customAlertOk">OK</button>
+    </div>
+  </div>
+  
+
+  <script src="../scripts.js/quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #d7b49e, #a47148);
+    color: #fff;
+    overflow-x: hidden;
+  }
+  
+  .page-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    padding: 4rem 2rem;
+  }
+  
+  .welcome-container {
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+    margin-top: 2rem;
+  }
+  
+  
+
+  .welcome-heading {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+  }
+  
+  .welcome-subtext {
+    font-size: 1.3rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    opacity: 0.95;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  }
+  
+  .tech-section {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 5rem;
+    width: 100%;
+  }
+  
+  
+  .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    pointer-events: none;
+  }
+  
+  .wave-html {
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 500 150" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.00,49.98 C150.00,150.00 349.14,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" fill="%23c89f85"/></svg>');
+  }
+  
+  .wave-css {
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 500 150" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.00,49.98 C150.00,150.00 349.14,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" fill="%238b5e3c"/></svg>');
+  }
+  
+  .wave-js {
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 500 150" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.00,49.98 C150.00,150.00 349.14,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" fill="%23604334"/></svg>');
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+
+
+
+:root {
+  --light-chocolate: #D2B48C;
+  --dark-chocolate:  #A0522D;
+  --btn-text-color:  #FFF;
+}
+
+.button-startquiz {
+  width:      200px;
+  height:     50px;
+  background: linear-gradient(145deg, var(--light-chocolate), var(--dark-chocolate));
+  border:     2px solid var(--dark-chocolate);
+  color:      var(--btn-text-color);
+  font-family:'Poppins', sans-serif;
+  font-size:20px;
+  font-weight:600;
+  border-radius: 8px;
+  box-shadow:
+    0 4px 6px rgba(0,0,0,0.1),
+    inset 0 -2px 4px rgba(0,0,0,0.2);
+  cursor:    pointer;
+  transition:transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button-startquiz:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 6px 8px rgba(0,0,0,0.15),
+    inset 0 -2px 4px rgba(0,0,0,0.2);
+}
+
+.button-startquiz:active {
+  transform: translateY(0);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+}
+
+

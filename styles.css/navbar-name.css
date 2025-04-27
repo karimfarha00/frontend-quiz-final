@@ -1,0 +1,28 @@
+
+.navbar {
+    background-color: #007BFF; 
+    padding: 10px 20px;
+  }
+  
+  
+  .navbar-content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  
+  .logo {
+    margin-right: 60px;
+   
+  }
+  
+  
+  .brand-name {
+    font-family: 'Playfair Display', serif;
+    font-size:30px;
+    font-weight: bold;
+    color:black; 
+    margin: 0;
+  }
+  

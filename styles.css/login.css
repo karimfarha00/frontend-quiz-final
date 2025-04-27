@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;           
+    display: flex;               
+    justify-content: center;     
+    align-items: center;         
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(120deg, #4A90E2, #1CB5E0);
+  }
+  
+  /* Auth box styling */
+  .auth-box {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    width: 350px;
+  }
+
+  .auth-box h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+  }
+
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+    background: #4A90E2;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  button:hover {
+    background: #357ABD;
+  }
+
+  .switch {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .switch a {
+    color: #4A90E2;
+    text-decoration: none;
+    font-weight: bold;
+  }

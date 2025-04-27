@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./styles.css/index.css">
+    <link rel="stylesheet" href="./styles.css/home-page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css/alert.css">
+    <link rel="stylesheet" href="./styles.css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css/navbar-name.css">
+
+    
+    
+    
+</head>
+<body>
+   <section id="home.html">
+  <header>
+    <nav class="navbar">
+      <div class="navbar-content">
+        <img class="logo" src="./images/FacePost.jpg" alt="Logo">
+        <p class="brand-name">Karim Dev-Academy</p>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home.html">🏠 Home</a></li>
+        <li><a link href="./pages.html/quiz.html">🧠 Quiz</a></li>
+        <li><a link href="./pages.html/dashboard-login.html"> 📊Dashboard</a></li>
+        <li><a href="#footer">ℹ️ About Us</a></li>
+        <li id="dashboard-tab" style="display: none;"><a href="./pages.html/dashboard-login.html">Dashboard</a></li>
+        <li class="flex-li" id="auth-btn" >
+          <a href="./pages.html/login.html" class="auth-switch">Login</a>
+          <a href="./pages.html/register.html" class="auth-switch">Register</a>
+          <button id="logoutBtn" class="auth-switch">LogOut</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+ 
+
+  <main class="page-wrapper">
+    <!-- Welcome Section -->
+    <div class="welcome-container">
+      <h1 class="welcome-heading">Welcome to My World 🌟</h1>
+      <h2 class="welcome-heading">Karim Dev-Academy 💻</h2>
+      <p class="welcome-subtext">Discover. Learn. Build. Inspire.</p>
+    </div>
+
+    <!-- HTML Section -->
+    <div class="tech-section">
+      <div class="card html-card">
+        <h2>HTML</h2>
+        <p>Hello! Let’s start by structuring our quiz with HTML.</p><br>
+        <button id="startHtmlQuizBtn" class="button-startquiz">Start HTML Quiz</button>
+        <div class="wave wave-html"></div>
+      </div>
+      
+    </div>
+
+    <!-- CSS Section -->
+    <div class="tech-section">
+      <div class="card css-card">
+        <h2>CSS</h2>
+        <p>Now let's make it look beautiful using CSS!</p><br>
+        <button id="startCssQuizBtn" class="button-startquiz">Start CSS Quiz</button>
+        <div class="wave wave-css"></div>
+      </div>
+      
+    </div>
+
+    <!-- JavaScript Section -->
+    <div class="tech-section">
+      <div class="card js-card">
+        <h2>JavaScript</h2>
+        <p>Time to make it interactive with JavaScript. Let’s go!</p><br>
+        <button id="startJsQuizBtn" class="button-startquiz">Start JS Quiz</button>
+        <div class="wave wave-js"></div>
+      </div>
+    
+    </div>
+    
+  </main>
+</section>
+
+  <div id="customAlert" class="custom-alert-overlay" style="display: none;">
+    <div class="custom-alert-box">
+      <p id="customAlertMessage">Alert goes here</p>
+      <button id="customAlertOk">OK</button>
+    </div>
+  </div>
+
+  <footer class="site-footer" id="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h2>About Us</h2>
+        <p>
+          Welcome to <strong>Karim Dev-Academy</strong> – your interactive platform to master HTML, CSS, and JavaScript through engaging quizzes. Our mission is to make learning web development fun and effective for everyone.
+        </p>
+      </div>
+  
+      <div class="footer-links">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./pages/quiz.html">Start Quiz</a></li>
+          <li><a href="./pages.html/login.html">Login</a></li>
+          <li><a href="./pages.html/register.html">Register</a></li>
+          <li><a href="./pages.html/dashboard.html">Dashboard</a></li>
+        </ul>
+      </div>
+  
+      
+      <div class="footer-contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:karim.farha.9@outlook.com">karim.farha.9@outlook.com</a></p>
+        <p>Phone-Number: 00961-71691193</p>
+        <p>Location: Tripoli, Lebanon</p>
+        <p>
+          
+          <div class="footer-social">
+          <a href="https://wa.me/message/U4OCAYNBKCUYI1" target="_blank" aria-label="Chat on WhatsApp">
+            
+            <img src="./images/Whatsapp-icon.png" alt="WhatsApp" />
+            <strong>Short Link </strong>
+          </a>
+        </p>
+      </div></div>
+  
+      <div class="footer-social">
+        <h2>Follow Us</h2>
+        <a href="https://www.facebook.com/share/19bg4oghZc/" target="_blank" aria-label="Facebook">
+          <img src="./images/download.jpeg" alt="Facebook">
+        </a>
+        
+        <a href="https://www.instagram.com/karimfarha14?igsh=bWZ0eGZxbncxamR4" target="_blank" aria-label="Instagram">
+          <img src="./images/instagram (1).jpeg" alt="Instagram">
+        </a>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>© 2025 QuizMaster. All rights reserved.</p>
+    </div>
+  </footer>
+ 
+<script src="./scripts.js/index.js"></script>
+  
+</body>
+</html>
